@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://www.lifestylehousing.in/blogs/wp-content/uploads/2021/03/Upgrading-to-a-luxury-lifestyle-min-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: 1800px 900px;
+  font-family: Arial, sans-serif;
+  background-color: blue;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px;
+  padding: 20px;
+  flex-grow: 1; /* Allow the container to grow and push footer down */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #4CAF50;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.add-item {
+  margin-top: 20px;
+  display: flex;
+}
+
+#itemInput {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addButton {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#addButton:hover {
+  background-color: #45a049;
+}
+
+ul {
+  margin-top: 30px;
+  list-style: none;
+}
+
+li {
+  background-color: #fafafa;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+li:hover {
+  background-color: #e2f7e1;
+  transform: scale(1.05);
+}
+
+button.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #777;
+  width: 100%; /* Ensure it takes up the full width */
+  position: absolute; /* Position at the bottom of the page */
+  bottom: 0;
+  padding: 10px;
+  background-color: #fff;
+}
